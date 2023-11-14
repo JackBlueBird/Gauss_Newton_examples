@@ -1,0 +1,3 @@
+C:/Users/Giacomo Zuccarino/CLionProjects/GN_example_circle/cmake-build-debug/CMakeFiles/GN_example_circle.dir
+C:/Users/Giacomo Zuccarino/CLionProjects/GN_example_circle/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Giacomo Zuccarino/CLionProjects/GN_example_circle/cmake-build-debug/CMakeFiles/rebuild_cache.dir
