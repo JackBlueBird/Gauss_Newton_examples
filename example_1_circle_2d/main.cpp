@@ -14,21 +14,21 @@ that is closer to the optimal minimum point.
  */
 
 /*
- * this structure represents a circle in the 2D plane.
+ * structure to represents a circle in the 2D plane.
  */
-struct Circle
-{
+struct Circle {
     double xc;
     double yc;
     double radius;
 };
 /*
- * this function returns a specific point on a circle
- * inputs: alpha [radiants], circle [Circle struct]
- * output: point in the 2D belonging to the circle
+ * Return a specific point on a circle.
+ *
+ * \param[in] alpha [radiants].
+ * \param[in] circle [Circle struct].
+ * \param[out]: point in the 2D belonging to the circle.
  */
-vector<double> r_fcn (double alpha, Circle circle)
-{
+vector<double> r_fcn (double alpha, Circle circle) {
     vector<double> r = {0,0};
     double xc = circle.xc;
     double yc = circle.yc;
@@ -37,22 +37,24 @@ vector<double> r_fcn (double alpha, Circle circle)
     r[1] = yc+rho*sin(alpha);
     return r;
 }
+
 /*
- * this function returns the Jacobian of the circle function
- * at a specific point
- * inputs: alpha [radiants], circle [Circle struct]
+ * Return the Jacobian of the circle function at a given point.
+ *
+ * \param[in] alpha [radiants].
+ * \param[in] circle [Circle struct].
  * output: jacobian of the circle function at the specific alpha
  */
-vector<double> J_fcn (double alpha, Circle circle)
-{
+vector<double> J_fcn (double alpha, Circle circle) {
     vector<double> J = {0,0};
     double rho = circle.radius;
     J[0] = -rho*sin(alpha);
     J[1] = rho*cos(alpha);
     return J;
 }
-double JTrk_fcn(vector<double> JT, vector<double> rk)
-{
+
+
+double JTrk_fcn(vector<double> JT, vector<double> rk) {
     return JT[0]*rk[0]+JT[1]*rk[1];
 }
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Giacomo Zuccarino/CLionProjects/GN_example_circle
+# Install script for directory: C:/Users/Giacomo Zuccarino/CLionProjects/Gauss_Newton_examples/example_1_circle_2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Giacomo Zuccarino/CLionProjects/GN_example_circle/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Giacomo Zuccarino/CLionProjects/Gauss_Newton_examples/example_1_circle_2d/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
